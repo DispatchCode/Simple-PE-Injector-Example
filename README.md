@@ -52,3 +52,14 @@ Il codice macchina iniettato è il seguente:
 La parima parte è il codice macchina, quella a seguire la relativa corrispondenza con assembly. Le *x* indicano che quell'indirizzo non è ancora presente; infatti viene calcolato dal software prima dell'iniziezione, così come l'indirizzo della MessageBoxA che non è conosciuto sino al momento della lettura della tabella delle JMP.
 
 E' importante osservare che l'indirizzo della MessageBoxA utilizzato non è quello della posizione in memoria della medesima, ma l'offset in VA interno al file. Questo perchè ad un prossimo avvio della macchina quella libreria si troverà (con buonissime probabilità) ad un altro indirizzo. Il codice salta quindi all'interno della *jump table*.
+
+### Funziona con qualsiasi exe? ###
+**No.** Funziona su molti software, anche commerciali. Tuttavia dipende da alcuni fattori: uno di essi ad esempio è la rilocazione. Un altro è la sezione CERTIFICATE.
+
+### Avvertenze ###
+Prima di utilizzarlo su un exe, è raccomandato fare prima un backup dello stesso. Non mi assumo nessuna responsabilità su usi scorretti o danni causati (per evitarli, è appunto bene backuppare prima l'exe).
+
+## Screenshot ##
+
+*Ecco l'esempio su un software (ne censuro il nome)*
+![2016-05-01_174725.png](https://bitbucket.org/repo/ok947j/images/3398532942-2016-05-01_174725.png)
