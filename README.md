@@ -1,6 +1,6 @@
 # README #
 
-*InjMyPe* nasce dall'idea di un articolo. L'articolo è dedicato interamente al PE Header. Lo scopo di questo codice è quello di verificare la correttezza dell'header, aggiungere poi una nuova SECTION al PE ed iniettare al suo interno del codice così da eseguirlo all'avvio. Fatto ciò modifica l'EP del programma (nel PE Header) e setta il nuovo codice iniettato come EP. Al termine del codice iniettato è presente un salto al vecchio EP.
+*InjMyPe* nasce dall'idea di un articolo dedicato interamente al PE Header. Lo scopo di questo codice è quello di verificare la correttezza dell'header, aggiungere poi una nuova SECTION al PE ed iniettare al suo interno del codice così da eseguirlo all'avvio. Fatto ciò modifica l'EP del programma (nel PE Header) e setta il nuovo codice iniettato come EP. Al termine del codice iniettato è presente un salto al vecchio EP.
 
 
 **Linguaggio:** Assembly (MASM)
